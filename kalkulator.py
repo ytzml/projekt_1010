@@ -1,10 +1,15 @@
-def dodawanie():
-	a = int(input())
-	b = int(input())
-	print(a + b)
+def dodawanie(a, b):
+	return a + b
 
 def get_info():
 	print("Program kalkulator. Autor: Jacek")
-	
+
 get_info()
-dodawanie()
+
+try:
+	l1 = int(input())
+	l2 = int(input())
+	print(dodawanie(l1, l2))
+except:
+	print("Program zakonczyl sie nieoczekiwanym bledem")
+	print("Mozesz go zglosic pod adresem pomoc@autor.pl")
